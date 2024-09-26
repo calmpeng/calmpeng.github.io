@@ -8,6 +8,8 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 </head>
 
 <body>
@@ -16,7 +18,7 @@
     window.$docsify = {
       name: '',
       repo: '',
-     
+
       loadSidebar: true,
       subMaxLevel: 3,
       loadNavbar: true,
@@ -39,9 +41,19 @@
         fontsize: '0.9em',    // 字体大小
         color: 'rgb(90,90,90)', // 字体颜色
         language: 'chinese'   // 语言设置
-      }
+      },
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h1, h2, h3, h4, h5',
+        title: '文章结构',
+      },
+      sidebarDisplayLevel: 1
+
 
     }
+
+
+
 
   </script>
   <!-- Docsify v4 -->
@@ -54,6 +66,8 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 </body>
 
 </html>
